@@ -1,8 +1,8 @@
 ---
 name: "jellyfin-plugin-isomounter"
 guid: "4682DD4C-A675-4F1B-8E7C-79ADF137A8F8"
-version: "1" # Please increment with each pull request
-jellyfin_version: "10.4.0" # The earliest binary-compatible version
+version: "1"
+jellyfin_version: "10.5.0"
 owner: "jellyfin"
 nicename: "IsoMounter"
 description: "Mount your ISO files for Jellyfin"
@@ -13,4 +13,4 @@ artifacts:
   - "Jellyfin.Plugin.IsoMounter.dll"
 build_type: "dotnet"
 dotnet_configuration: "Release"
-dotnet_framework: "netstandard2.0"
+dotnet_framework: "netstandard2.1"
