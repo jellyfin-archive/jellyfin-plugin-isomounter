@@ -1,6 +1,6 @@
-# Jellyfin.Plugin.IsoMounting
+# jellyfin-plugin-isomounter
 
-This implements two core interfaces, IIsoManager, and IIsoMount.
+This implements two core interfaces: IIsoManager and IIsoMount.
 
 ## IIsoManager
 
@@ -10,12 +10,12 @@ The manager class can be used to create a mount, and also determine if the mount
 
 IIsoMount then represents a mount instance, which will be unmounted on disposal.
 
-This Linux version uses sudo, mount and umount.
+This Linux version uses sudo, mount, and umount.
 
-You need to add this to your sudo file via visudo(change the username):
+You need to add this to your sudo file via visudo.
 
 ```sh
-    Defaults:jsmith !requiretty
-    jsmith ALL=(root) NOPASSWD: /bin/mount
-    jsmith ALL=(root) NOPASSWD: /bin/umount
+Defaults:jsmith !requiretty
+jsmith ALL=(root) NOPASSWD: /bin/mount
+jsmith ALL=(root) NOPASSWD: /bin/umount
 ```
