@@ -1,12 +1,11 @@
 ---
-name: "IsoMounter"
+name: "ISO Mounter"
 guid: "4682DD4C-A675-4F1B-8E7C-79ADF137A8F8"
 version: "1.0.0.0"
 targetAbi: "10.5.0.0"
 owner: "jellyfin"
-nicename: "IsoMounter"
-description: "Mount your ISO files for Jellyfin"
-overview: >
+overview: "Mount your ISO files for Jellyfin"
+description: >
   Mount your ISO files for Jellyfin.
 category: "Metadata"
 artifacts:
