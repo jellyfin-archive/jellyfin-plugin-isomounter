@@ -21,14 +21,14 @@ namespace Jellyfin.Plugin.IsoMounter
         private const string UnmountCommand = "umount";
         private const string SudoCommand = "sudo";
 
-        private readonly ILogger _logger;
+        private readonly ILogger<LinuxIsoManager> _logger;
         private readonly string _mountPointRoot;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LinuxIsoManager" /> class.
         /// </summary>
         /// <param name="logger">The logger.</param>
-        public LinuxIsoManager(ILogger logger)
+        public LinuxIsoManager(ILogger<LinuxIsoManager> logger)
         {
             _logger = logger;
 
