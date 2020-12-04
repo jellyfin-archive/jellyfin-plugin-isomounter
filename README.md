@@ -1,5 +1,7 @@
 # jellyfin-plugin-isomounter
 
+**ARCHIVED**: Functionality moved to core server.
+
 This implements two core interfaces: IIsoManager and IIsoMount.
 
 ## IIsoManager
